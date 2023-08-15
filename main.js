@@ -3,6 +3,7 @@ const calendario = document.querySelector('.calendar')
 const modalShow = document.querySelector('.modal-overlay')
 const modalButton = document.querySelector('.modal-button')
 const modalTxt = document.querySelector('.modal-txt')
+const modalImg = document.querySelector('.modal-img')
 let openedCells = []
 const controlOpened = localStorage.getItem('opened')
 
@@ -38,10 +39,13 @@ for(let i = 0; i < celle.length; i++){
         modalShow.classList.remove('d-none')
         if(25-(i+1)===1){
             modalTxt.innerHTML = `manca ${25-(i+1)} giorni a natale`
+            modalImg.src = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/christmas-is-coming-dabbing-santa-claus-this-christmas-jose-o.jpg'
         } else if(25-(i+1)>0){
             modalTxt.innerHTML = `mancano ${25-(i+1)} giorni a natale`
+            modalImg.src = 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/christmas-is-coming-dabbing-santa-claus-this-christmas-jose-o.jpg'
         } else {
             modalTxt.innerHTML = 'BUON NATALE!'
+            modalImg.src = 'https://img.freepik.com/free-vector/merry-christmas-wallpaper-design_79603-2129.jpg?w=2000'
         }
         addOpenedCells(cella.dataset.giorno)
         console.log(openedCells)
