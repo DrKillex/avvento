@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(6, 6, 129);
+}
+.opened{
+    opacity: 0.8;
+}
+.calendar-cell{
+    background-color: rgba(20, 158, 55, 0.774);
+    aspect-ratio: 1;
+    font-size: 1.5625rem;
+    border-radius: .625rem;
+    font-weight: 800;
+    color: white;
+}
+.modal-overlay{
+    position: fixed;
+    color: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(12, 11, 74, 0.8);
+}
+.modal-box{
+    min-height: 200px;
+    min-width: 200px;
+    background-color: rgb(223, 83, 107);
+    border-radius: .625rem;
+    padding: .625rem;
+}
+.modal-img{
+    max-width: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+header img{
+    border-radius: 20px;
+}
